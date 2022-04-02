@@ -393,14 +393,15 @@ blockquote footer::before {
 pre {
   font: 2.2rem / 1.5 Consolas, monaco, monospace;
   color: rgb(53, 53, 53);
-  -moz-tab-size: 4;
+  -moz-tab-size: 1;
   tab-size: 4;
   /* 1 */
-  overflow: auto;
   padding: 10px;
   border: 0px solid #e5e5e5;
   border-radius: 3px;
   background: #fff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 pre code {
   font-family: Consolas, monaco, monospace;
@@ -413,8 +414,10 @@ label {
 }
 
 des {
-  font-size: 1.3;
-  inline-size: 150px;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 100px;
+  word-wrap: break-word;
 
 }
 
@@ -593,7 +596,7 @@ a.uk-link-reset,
  ========================================================================== */
 .uk-heading-divider {
   padding-bottom: calc(5px + 0.1em);
-  border-bottom: calc(0.2px + 0.05em) solid #e5e5e5;
+  border-bottom: calc(.8px + 0.05em) solid #3d301e;
 }
 /* Bullet
  ========================================================================== */
@@ -7323,6 +7326,7 @@ td.uk-text-truncate {
  */
 .uk-text-break {
   overflow-wrap: break-word;
+  display: -ms-inline-flexbox;
 }
 /* 1 */
 th.uk-text-break,

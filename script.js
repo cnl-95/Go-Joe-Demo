@@ -269,7 +269,7 @@ if (
 
 //Error 
   else {
-    document.querySelector('pre').innerHTML = 'YIKES! <br> We dont have a result for you! <br>Try adjusting your filters to get a cup of Joe.';;
+    document.querySelector('pre').innerHTML = 'YIKES! <br> We dont have a result for you! <br> Try adjusting your filters to get a cup of Joe.';
   }
 };
 
