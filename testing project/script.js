@@ -1,6 +1,6 @@
- fetch('https://api.sampleapis.com/coffee/hot')
-  .then(response => response.json())
-  .then(json => console.log(json))
+ //fetch('https://api.sampleapis.com/coffee/hot')
+  //.then(response => response.json())
+  //.then(json => console.log(json))
 
  // fetch('https://api.sampleapis.com/coffee/iced')
  //.then(response => response.json())
@@ -10,8 +10,8 @@
  //This is where the magic happens
 
  //also side note, my code seems unbelievably long. 
- //In retrospect, I could have found a different way to make my code shorter and more efficent, but it works. 
- //Truly I didnt know if I would be able to make this happen, but here it is.
+ //In retrospect, I could have found a different way to make my code shorter and more efficient, but it works. 
+ //Truly I didnt know if I would be able to make this happen at all, but here it is.
 
 
 
@@ -372,7 +372,7 @@ function fetchData10() {
     console.log(data[10].title);
     
     document.querySelector('pre').innerHTML = (data[10].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[10].description + ' <br> <a href="https://www.caffesociety.co.uk/how-to-make-an-americano" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[10].description + ' <br> <a href="https://copykat.com/how-to-make-your-favorite-starbucks-flat-white/" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
@@ -389,7 +389,7 @@ function fetchData11() {
     console.log(data[11].title);
     
     document.querySelector('pre').innerHTML = (data[11].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[11].description + ' <br> <a href="https://coffeeaffection.com/how-to-make-espresso/" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[11].description + ' <br> <a href="https://www.thekitchn.com/affogato-recipe-23058717" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
@@ -406,7 +406,7 @@ function fetchData12() {
     console.log(data[12].title);
     
     document.querySelector('pre').innerHTML = (data[12].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[12].description + ' <br> <a href="https://fullcoffeeroast.com/how-to-make-the-perfect-doppio-espresso/" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[12].description + ' <br> <a href="https://www.masterclass.com/articles/cafe-au-lait-recipe" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
@@ -423,7 +423,7 @@ function fetchData13() {
     console.log(data[13].title);
     
     document.querySelector('pre').innerHTML = (data[13].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[13].description + ' <br> <a href="https://fullcoffeeroast.com/how-to-make-the-perfect-doppio-espresso/" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[13].description + ' <br> <a href="https://www.thekitchn.com/how-to-make-irish-coffee-167678" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
@@ -440,7 +440,7 @@ function fetchData14() {
     console.log(data[14].title);
     
     document.querySelector('pre').innerHTML = (data[14].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[14].description + ' <br> <a href="https://www.acouplecooks.com/red-eye-coffee/" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[14].description + ' <br> <a href="https://www.roastycoffee.com/venezuelan-coffee/" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
@@ -457,7 +457,7 @@ function fetchData15() {
     console.log(data[15].title);
     
     document.querySelector('pre').innerHTML = (data[15].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[15].description + ' <br> <a href="https://coffeeaffection.com/portuguese-coffee-recipe/" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[15].description + ' <br> <a href="https://www.homegrounds.co/cortadito/" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
@@ -474,7 +474,7 @@ function fetchData16() {
     console.log(data[16].title);
     
     document.querySelector('pre').innerHTML = (data[16].title)  +  ' would be great for you!';
-    document.querySelector('des').innerHTML = (data[16].description + ' <br> <a href="https://coffeeatthree.com/lungo/" target="_blank">Click here to make it!</a>');
+    document.querySelector('des').innerHTML = (data[16].description + ' <br> <a href="https://www.rhubarbarians.com/colombian-coffee-brewed-with-aguapanela/" target="_blank">Click here to make it!</a>');
   }).catch(error => {
     console.log(error);
   });
