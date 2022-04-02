@@ -32,3 +32,37 @@ switch(day) {
 }
   
  fetchData0();
+
+
+
+
+ onclick="americano()
+
+
+ function submit(){
+  var answers = document.getElementById("1");
+    switch (answers) {
+      case true: 
+        console.log('true');
+        break;
+        default:
+          console.log('error');
+          break;
+  }
+};
+
+
+function submit(){
+  var answers = document.getElementById("one").value;
+    switch (answers) {
+      case (''): 
+        console.log('true');
+        break;
+        default:
+          console.log('error');
+          break;
+  }
+};
+
+
+checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false && checkBox5.checked == true && checkBox6.checked == true && checkBox7.checked == false && checkBox8.checked == true && checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true 

@@ -1,22 +1,24 @@
- //fetch('https://api.sampleapis.com/coffee/hot')
+  //fetch('https://api.sampleapis.com/coffee/hot')
   //.then(response => response.json())
   //.then(json => console.log(json))
 
- // fetch('https://api.sampleapis.com/coffee/iced')
- //.then(response => response.json())
- //.then(json => console.log(json))
+  // fetch('https://api.sampleapis.com/coffee/iced')
+  //.then(response => response.json())
+  //.then(json => console.log(json))
  
 
- //This is where the magic happens
-
- //also side note, my code seems unbelievably long. 
- //In retrospect, I could have found a different way to make my code shorter and more efficient, but it works. 
- //Truly I didnt know if I would be able to make this happen at all, but here it is.
 
 
+ // side note, my code seems unbelievably long. 
+ // In retrospect, I could have found a different way to make my code shorter and more efficient, but it works. 
+ // Truly I didnt know if I would be able to make this happen at all, but here it is.
+
+ // This is where the magic happens
 
  function submit() {
   
+  var checkBox01 = document.getElementById("zeroone");
+  var checkBox02 = document.getElementById("zerotwo");
   var checkBox1 = document.getElementById("one");
   var checkBox2 = document.getElementById("two");
   var checkBox3 = document.getElementById("three");
@@ -33,6 +35,7 @@
  
   //Americano
   if (
+    (checkBox01.checked == true && checkBox02.checked == false) &&
     (checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -42,6 +45,7 @@
   } 
   //Espresso
   if  (
+    (checkBox01.checked == true && checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -51,6 +55,7 @@
   }
 //Doppio
   if (
+    (checkBox01.checked == true && checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -60,6 +65,7 @@
   }
 //Cortado
   if (
+    (checkBox01.checked == true && checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -69,6 +75,7 @@
   }
 //Red Eye
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -78,6 +85,7 @@ if (
 }
 //Galão
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == true && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -87,6 +95,7 @@ if (
 }
 //Lungo
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -96,6 +105,7 @@ if (
 }
 //Macchiato
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true || checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == true || checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true)
@@ -105,6 +115,7 @@ if (
 }
 //Mocha
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true)
@@ -114,6 +125,7 @@ if (
 }
 //Ristretto
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -123,6 +135,7 @@ if (
 }
 //Flat White
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -132,6 +145,7 @@ if (
 }
 //Affogato
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true || checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -141,6 +155,7 @@ if (
 }
  //Café au Lait
  if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -150,6 +165,7 @@ if (
 }
 //Irish
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true)
@@ -159,6 +175,7 @@ if (
 }
 //Guayoyo
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -168,6 +185,7 @@ if (
 } 
 //Cortadito
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -177,6 +195,7 @@ if (
 }
 //Aguapanela Coffee
 if (
+  (checkBox01.checked == true && checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false && checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -184,6 +203,70 @@ if (
   {
   fetchData16();
 }
+
+/////////////// ICED COFFEE //////////////////
+
+// Iced Coffee
+if (
+  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
+  (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  )
+  {
+  fetchData00();
+}
+// Iced Espresso
+if  (
+  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
+  (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  )
+  {
+  fetchData01();
+}
+// Cold Brew
+if  (
+  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
+  (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  )
+  {
+  fetchData02();
+}
+// Frappuccino
+if  (
+  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox1.checked == false && checkBox2.checked == true && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
+  (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
+  (checkBox9.checked == false && checkBox10.checked == true && checkBox11.checked == false || checkBox12.checked == true)
+  )
+  {
+  fetchData03();
+}
+// Nitro
+if  (
+  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
+  (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
+  )
+  {
+  fetchData04();
+}
+// Mazagran
+if (
+  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
+  (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true)
+  )
+  {
+  fetchData05();
+}
+
 //Error 
   else {
     document.querySelector('pre').innerHTML = 'YIKES! We dont have a result for you! Try adjusting your filters do get a cup of Joe.';;
@@ -480,3 +563,106 @@ function fetchData16() {
   });
 }
 
+/////////////// ICED COFFEE //////////////////
+
+// Iced Coffee
+
+function fetchData00() {
+  fetch('https://api.sampleapis.com/coffee/iced')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data[0].title);
+    
+    document.querySelector('pre').innerHTML = (data[0].title)  +  ' would be great for you!';
+    document.querySelector('des').innerHTML = (data[0].description + ' <br> <a href="https://www.homegrounds.co/cortadito/" target="_blank">Click here to make it!</a>');
+  }).catch(error => {
+    console.log(error);
+  });
+}
+
+// Iced Espresso
+
+function fetchData01() {
+  fetch('https://api.sampleapis.com/coffee/iced')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data[1].title);
+    
+    document.querySelector('pre').innerHTML = (data[1].title)  +  ' would be great for you!';
+    document.querySelector('des').innerHTML = (data[1].description + ' <br> <a href="https://www.acouplecooks.com/iced-espresso/" target="_blank">Click here to make it!</a>');
+  }).catch(error => {
+    console.log(error);
+  });
+}
+
+// Cold Brew
+
+function fetchData02() {
+  fetch('https://api.sampleapis.com/coffee/iced')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data[2].title);
+    
+    document.querySelector('pre').innerHTML = (data[2].title)  +  ' would be great for you!';
+    document.querySelector('des').innerHTML = (data[2].description + ' <br> <a href="https://www.simplyrecipes.com/recipes/how_to_make_cold_brew_coffee/" target="_blank">Click here to make it!</a>');
+  }).catch(error => {
+    console.log(error);
+  });
+}
+
+// Frappuccino
+
+function fetchData03() {
+  fetch('https://api.sampleapis.com/coffee/iced')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data[3].title);
+    
+    document.querySelector('pre').innerHTML = (data[3].title)  +  ' would be great for you!';
+    document.querySelector('des').innerHTML = (data[3].description + ' <br> <a href="https://addapinch.com/frappuccino-recipe/" target="_blank">Click here to make it!</a>');
+  }).catch(error => {
+    console.log(error);
+  });
+}
+
+// Nitro
+
+function fetchData04() {
+  fetch('https://api.sampleapis.com/coffee/iced')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data[4].title);
+    
+    document.querySelector('pre').innerHTML = (data[4].title)  +  ' would be great for you!';
+    document.querySelector('des').innerHTML = (data[4].description + ' <br> <a href="https://coffeeaffection.com/nitro-coffee/" target="_blank">Click here to make it!</a>');
+  }).catch(error => {
+    console.log(error);
+  });
+}
+
+// Mazagran
+
+function fetchData05() {
+  fetch('https://api.sampleapis.com/coffee/iced')
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data[5].title);
+    
+    document.querySelector('pre').innerHTML = (data[5].title)  +  ' would be great for you!';
+    document.querySelector('des').innerHTML = (data[5].description + ' <br> <a href="https://greatist.com/eat/mazagran-first-iced-coffee" target="_blank">Click here to make it!</a>');
+  }).catch(error => {
+    console.log(error);
+  });
+}
