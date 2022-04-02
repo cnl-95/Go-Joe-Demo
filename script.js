@@ -35,7 +35,7 @@
  
   //Americano
   if (
-    (checkBox01.checked == true && checkBox02.checked == false) &&
+    (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -45,7 +45,7 @@
   } 
   //Espresso
   if  (
-    (checkBox01.checked == true && checkBox02.checked == false) &&
+    (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -55,7 +55,7 @@
   }
 //Doppio
   if (
-    (checkBox01.checked == true && checkBox02.checked == false) &&
+    (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -65,7 +65,7 @@
   }
 //Cortado
   if (
-    (checkBox01.checked == true && checkBox02.checked == false) &&
+    (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
     (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -75,7 +75,7 @@
   }
 //Red Eye
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -85,7 +85,7 @@ if (
 }
 //Galão
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == true && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -95,7 +95,7 @@ if (
 }
 //Lungo
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
@@ -105,7 +105,7 @@ if (
 }
 //Macchiato
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true || checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == true || checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true)
@@ -115,7 +115,7 @@ if (
 }
 //Mocha
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true)
@@ -125,7 +125,7 @@ if (
 }
 //Ristretto
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -135,7 +135,7 @@ if (
 }
 //Flat White
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -145,7 +145,7 @@ if (
 }
 //Affogato
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true || checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -155,7 +155,7 @@ if (
 }
  //Café au Lait
  if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -165,7 +165,7 @@ if (
 }
 //Irish
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true)
@@ -175,7 +175,7 @@ if (
 }
 //Guayoyo
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -185,7 +185,7 @@ if (
 } 
 //Cortadito
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -195,7 +195,7 @@ if (
 }
 //Aguapanela Coffee
 if (
-  (checkBox01.checked == true && checkBox02.checked == false) &&
+  (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false && checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -208,7 +208,7 @@ if (
 
 // Iced Coffee
 if (
-  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -218,7 +218,7 @@ if (
 }
 // Iced Espresso
 if  (
-  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -228,7 +228,7 @@ if  (
 }
 // Cold Brew
 if  (
-  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
@@ -238,7 +238,7 @@ if  (
 }
 // Frappuccino
 if  (
-  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == true && checkBox11.checked == false || checkBox12.checked == true)
@@ -248,7 +248,7 @@ if  (
 }
 // Nitro
 if  (
-  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
@@ -258,7 +258,7 @@ if  (
 }
 // Mazagran
 if (
-  (checkBox01.checked == false && checkBox02.checked == true) &&
+  (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
   (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true)
@@ -269,7 +269,7 @@ if (
 
 //Error 
   else {
-    document.querySelector('pre').innerHTML = 'YIKES! We dont have a result for you! Try adjusting your filters do get a cup of Joe.';;
+    document.querySelector('pre').innerHTML = 'YIKES! <br> We dont have a result for you! <br>Try adjusting your filters to get a cup of Joe.';;
   }
 };
 
