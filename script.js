@@ -8,11 +8,26 @@
  
 
  // Local storage
- const coffee = document.querySelector('pre').value
 
-window.localStorage.setItem('coffee', JSON.parse(coffee));
-window.localStorage.getItem('coffee');
+var storageInput = document.querySelector('.storage');
+var text = document.querySelector('.text');
+var button = document.querySelector('.button');
+var storedInput = localStorage.getItem('textinput');
 
+if(storageInput) {
+  text.textContent = storedInput
+}
+
+storageInput.addEventListener('input', letter =>{
+  text.textContent = letter.target.value
+
+});
+
+const saveToLocalStorage = () => {
+  localStorage.setItem('textinput', text.textContent)
+}
+
+button.addEventListener('click', saveToLocalStorage);
 
 
  // side note, my code seems unbelievably long. 

@@ -208,6 +208,7 @@ figure {
   list-style-type: none;
   font-weight: bolder;
   font-size: 1.6rem;
+  margin-bottom: 30px;
 }
 /* Add margin if adjacent element */
 * + p,
