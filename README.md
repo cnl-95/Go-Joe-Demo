@@ -1,12 +1,12 @@
-# Go-Joe-Demo
+# GoJoe
 
 ## Live Page
-https://cnl-95.github.io/Go-Joe-Demo/
+https://cnl-95.github.io/GoJoe/
 
 GoJoe is an interactive quiz to help you find your new favor type of coffee.
 
-![] (IMGS\Screenshot_1.png)
-![] (IMGS\Screenshot_2.png)
+![Screen Shot](IMGS\Screenshot_1.png)
+![Screen Shot](IMGS\Screenshot_2.png)
 ## Technologies Used
 
 HTML/CSS/JAVASCRIPT
