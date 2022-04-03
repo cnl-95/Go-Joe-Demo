@@ -1,11 +1,17 @@
-  //fetch('https://api.sampleapis.com/coffee/hot')
-  //.then(response => response.json())
-  //.then(json => console.log(json))
+  fetch('https://api.sampleapis.com/coffee/hot')
+  .then(response => response.json())
+  .then(json => console.log(json))
 
-  // fetch('https://api.sampleapis.com/coffee/iced')
-  //.then(response => response.json())
-  //.then(json => console.log(json))
+   fetch('https://api.sampleapis.com/coffee/iced')
+ .then(response => response.json())
+ .then(json => console.log(json))
  
+
+ // Local storage
+ const coffee = document.querySelector('pre').value
+
+window.localStorage.setItem('coffee', JSON.parse(coffee));
+window.localStorage.getItem('coffee');
 
 
 
@@ -31,6 +37,8 @@
   var checkBox10 = document.getElementById("ten");
   var checkBox11 = document.getElementById("eleven");
   var checkBox12 = document.getElementById("twelve");
+  var checkBox13 = document.getElementById("thirteen");
+  
 
  
   //Americano
@@ -38,7 +46,7 @@
     (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-    (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
+    (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == true)
     )
     {
     fetchData0();
@@ -48,7 +56,7 @@
     (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-    (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
+    (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == true)
     )
     {
     fetchData1();
@@ -58,7 +66,7 @@
     (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-    (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
+    (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
     )
     {
     fetchData2();
@@ -68,7 +76,7 @@
     (checkBox01.checked == true || checkBox02.checked == false) &&
     (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
     (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-    (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+    (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
     )
     {
     fetchData3();
@@ -78,7 +86,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false )
   )
   {
   fetchData4();
@@ -88,7 +96,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == true && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == true && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData5();
@@ -98,7 +106,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false || checkBox10.checked == false || checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == true)
   )
   {
   fetchData6();
@@ -108,7 +116,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true || checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == true || checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == true || checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData7();
@@ -118,7 +126,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == true || checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData8();
@@ -128,7 +136,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == true)
   )
   {
   fetchData9();
@@ -138,7 +146,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData10();
@@ -148,7 +156,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true || checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData11();
@@ -158,7 +166,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData12();
@@ -168,7 +176,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData13();
@@ -178,7 +186,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == true && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData14();
@@ -188,7 +196,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData15();
@@ -198,7 +206,7 @@ if (
   (checkBox01.checked == true || checkBox02.checked == false) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == false && checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData16();
@@ -211,7 +219,7 @@ if (
   (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData00();
@@ -221,7 +229,7 @@ if  (
   (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData01();
@@ -231,7 +239,7 @@ if  (
   (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == false && checkBox3.checked == false && checkBox4.checked == true || checkBox5.checked == true) &&
   (checkBox6.checked == true && checkBox7.checked == false || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false && checkBox12.checked == false && checkBox13.checked == true)
   )
   {
   fetchData02();
@@ -241,7 +249,7 @@ if  (
   (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true && checkBox3.checked == false && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == true && checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == true && checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData03();
@@ -251,7 +259,7 @@ if  (
   (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == false || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData04();
@@ -261,7 +269,7 @@ if (
   (checkBox01.checked == false || checkBox02.checked == true) &&
   (checkBox1.checked == false && checkBox2.checked == true || checkBox3.checked == true && checkBox4.checked == false || checkBox5.checked == true) &&
   (checkBox6.checked == false && checkBox7.checked == true || checkBox8.checked == true) &&
-  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true)
+  (checkBox9.checked == false && checkBox10.checked == false && checkBox11.checked == true || checkBox12.checked == true && checkBox13.checked == false)
   )
   {
   fetchData05();
